@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuro skaičiuoklė</title>
+</head>
+<body>
+    <h1>Kuro skaičiuoklė</h1>
+    <form action="/" method="POST">
+        Kuro kaina € už litra
+        <input type="text" name="kaina"><br>
+        Kuro sanaudos litrų 100km
+        <input type="text" name="sanaudos"><br>
+        Norimas nuvažiuoti atstumas km
+        <input type="text" name="atstumas"><br>
+        <button type="submit" value="submit">Skaiciuoti</button>
+    </form>
+    {% if l %}{% if sum %}
+    <p>Jums reikės {{l}} litrų kuro ir tai kainuos {{sum}} €</p>
+    {% endif %}{% endif %}
+</body>
+</html>
